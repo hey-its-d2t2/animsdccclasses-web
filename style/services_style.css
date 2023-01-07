@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+
+/* -------------------- Golbal Values ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*      Theme colors        */
+    --themColor: #d33737;
+    --fontColor: #ffff;
+    --contentFontColor: rgb(0, 0, 0);
+    --bodyBackground: cornsilk;
+    --footerColor: rgb(29, 29, 29);
+    --s-body-bg: rgb(239, 239, 239);
+    --navHooverColor: rgb(0, 247, 128);
+    ;
+    --nvaHoverBottom: rgb(0, 47, 255);
+    /*      THeading font       */
+    --heading-text: 'Signika Negative';
+    --body-text: 'Bree Serif', 'sans-serif';
+}
+
+hr {
+    margin: 15px 80px;
+    height: 2px;
+    background-color: var(--themColor);
+    border: none;
+}
+
+/* ----------x--------- Golbal Values -------x----- */
+
+.logo {
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: var(--themColor);
+    color: var(--fontColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    height: 60px;
+}
+
+.navbar h1 {
+    align-items: center;
+    font-family: var(--heading-text);
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: var(--fontColor);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    font-family: var(--heading-text);
+    font-size: 22px;
+}
+
+.navbar ul li :hover {
+    background-color: var(--navHooverColor);
+    color: var(--themColor);
+    border-bottom: 2px solid var(--nvaHoverBottom)
+}
+
+.header-image img {
+    width: 100%;
+    height: 430px;
+    transition: all 1s ease;
+}
+
+/* ----------------we provides text--------------- */
+.we-provide-txt {
+    height: 200px;
+    width: 100%;
+    background-color: var(--themColor);
+    font-family: var(--heading-text);
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+.we-provide-txt h2 {
+    font-size: 64px;
+    color: var(--fontColor);
+}
+
+/* ---------x------we provides text--------x------ */
+
+.services-text-xontainer {
+    height: 500px;
+    width: 100%;
+    padding: 2rem 20%;
+    display: inline-flex;
+    overflow: hidden;
+}
+
+.services-text-xontainer img {
+    height: 90%;
+    width: 550px;
+}
+
+.s-body h2 {
+    font-size: 36px;
+    color: var(--themColor);
+    font-family: var(--heading-text);
+
+}
+
+.s-body p {
+    font-size: 26px;
+    font-family: var(--body-text);
+    color: var(--contentFontColor);
+}
+
+.s-body {
+    padding: 1re 3rem;
+}
+
+.s2,
+.s4,
+.s6 {
+    background-color: var(--s-body-bg);
+}
+
+/* --------------Footer -------------------- */
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: var(--footerColor);
+    display: inline-block;
+    color: var(--fontColor);
+    font-family: var(--body-text);
+}
+
+.bottom-navgation {
+    height: 100%;
+    width: 30%;
+    margin: 0% 5%;
+    padding: 2rem 3rem;
+}
+
+.footer-content {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    background-color: var(--footerColor);
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.bottom-navgation ul li a {
+    font-family: var(--heading-text);
+    color: var(--fontColor);
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+}
+
+.dev-info {
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.dev-info a {
+    color: var(--fontColor);
+    text-decoration: none;
+    font-family: var(--heading-text);
+    font-size: 22px;
+}
+
+.bottom-navgation-social {
+    font-size: 30px;
+    color: var(--fontColor);
+
+}
+
+/* -------------x----Footer-----------X */

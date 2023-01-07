@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+
+/* -------------------- Golbal Values ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*      Theme colors        */
+    --themColor: #d33737;
+    --fontColor: #ffff;
+    --contentFontColor: rgb(0, 0, 0);
+    --bodyBackground: cornsilk;
+    --footerColor: rgb(29, 29, 29);
+    --navHooverColor: rgb(0, 247, 128);
+    ;
+    --nvaHoverBottom: rgb(0, 47, 255);
+
+    /*      THeading font       */
+    --heading-text: 'Signika Negative';
+    --body-text: 'Bree Serif', 'sans-serif';
+}
+
+hr {
+    margin: 15px 80px;
+    height: 2px;
+    background-color: var(--themColor);
+    border: none;
+}
+
+/* ----------x--------- Golbal Values -------x----- */
+
+.logo {
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: var(--themColor);
+    color: var(--fontColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    height: 60px;
+}
+
+.navbar h1 {
+    align-items: center;
+    font-family: var(--heading-text);
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: var(--fontColor);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    font-family: var(--heading-text);
+    font-size: 22px;
+}
+
+.navbar ul li :hover {
+    background-color: var(--navHooverColor);
+    color: var(--themColor);
+    border-bottom: 2px solid var(--nvaHoverBottom)
+}
+
+.header-image img {
+    width: 100%;
+    height: 430px;
+    transition: all 1s ease;
+}
+
+/* -------------------    Class Name & Slogan ------------------ */
+.class-name-container {
+    width: 100%;
+    height: 250px;
+    background-color: var(--themColor);
+    text-align: center;
+    padding: 30px 70px;
+    color: var(--fontColor);
+}
+
+.class-name-container h1,
+p {
+    line-height: 125%;
+}
+
+.class-name-container h1 {
+    font-family: var(--heading-text);
+    font-size: 65px;
+}
+
+.class-name-container p {
+    font-family: var(--body-text);
+    font-size: 32px;
+}
+
+/* --------x----------    Class Name & Slogan --------x--------- */
+/* -------------------    Image Slide Show ------------------ */
+.ic {
+    height: 700px;
+    width: 100%;
+    z-index: -1100;
+    position: relative;
+    padding: 2rem 10%;
+}
+
+.container {
+    height: 80%;
+    width: 60%;
+    position: absolute;
+    transform: translate(18%, 5%);
+    overflow: hidden;
+    border: 1px solid var(--themColor);
+    border-radius: 8px;
+    box-shadow: 1px 2px 60px rgba(200, 30, 30, 0.3);
+}
+
+.wrapper {
+    display: inline-flex;
+    animation: slide 20s infinite;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(20);
+    }
+
+    25% {
+        transform: translateX(10);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-100%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+/* ---------x---------    Image Slide Show ---------x-------- */
+
+/* --------------------- Work Flow --------------------------- */
+.workflow-container {
+    height: 700px;
+    width: 100%;
+    align-items: center;
+}
+
+.workflow-continer-body {
+    height: 80%;
+    width: 70%;
+    margin: 1% 15%;
+    padding: 1rem 2rem;
+}
+
+.workflow-content-holder {
+    height: 100%;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.workflow-container h2 {
+    font-style: var(--heading-text);
+    font-weight: 900px;
+    font-size: 52px;
+    color: var(--themColor);
+    margin: 0 30%;
+}
+
+.workflow-continer-body h5 {
+    color: var(--themColor);
+    width: 100%;
+    font-size: 29px;
+}
+
+.workflow-continer-body p {
+    font-size: 22px;
+    font-family: var(--body-text)
+}
+
+.workflow-continer-body img {
+    height: 160px;
+    width: 160px;
+}
+
+.tc {
+    margin-left: 90px;
+}
+
+.sg {
+    margin-top: 60px;
+    margin-left: 70px;
+}
+
+.cl {
+    margin-top: 60px;
+    margin-top: 300;
+    width: 480px !important;
+
+}
+
+.tc,
+.pl,
+.cl,
+.sg {
+    height: 160px;
+    width: 460px;
+    display: inline-flex;
+}
+
+/* -----------x--------- Work Flow ----------------x---------- */
+
+/* ------------------ Our free learning resources -------------- */
+.our-learning-resources {
+
+    width: 100%;
+    height: 3950px;
+    align-items: center;
+    padding: 1rem 15%;
+}
+
+.flr-text {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 0%;
+    align-items: center;
+    padding: 3rem 12rem;
+    background-color: var(--themColor)
+}
+
+.flr-text h5 {
+    font-family: var(--heading-text);
+    font-size: 70px;
+    color: var(--fontColor);
+}
+
+.flr-text p {
+    font-family: var(--body-text);
+    color: var(--fontColor);
+    font-size: 24px;
+}
+
+/*---------------- Videos ----------------*/
+
+.our-learning-resources iframe {
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------- global videos ---------- */
+/*  --------------------- main videos------------  */
+
+.flr-vd1,
+.flr-vd2,
+.flr-vd3,
+.flr-vd4 {
+    height: 560px;
+    width: 100%;
+    margin-top: 30px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+/*  ------------x-------- main videos------x-----  */
+
+/*  --------------------- sub videos------------  */
+
+.flr-vd1-v1,
+.flr-vd2-v1,
+.flr-vd3-v1,
+.flr-vd4-v1 {
+    height: 320px;
+    width: 380px;
+    margin-left: 0px;
+    margin-top: 40px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.flr-vd1-v2,
+.flr-vd1-v3,
+.flr-vd2-v2,
+.flr-vd2-v3,
+.flr-vd3-v2,
+.flr-vd3-v3,
+.flr-vd4-v2,
+.flr-vd4-v3 {
+    height: 320px;
+    width: 380px;
+    margin-left: 10px;
+    margin-top: 40px;
+    display: inline-flex;
+    cursor: pointer;
+}
+
+/*  -----------x--------- sub videos------x-----  */
+
+/* --------------- Video Desc--------------*/
+.flr-des-txt {
+    margin-top: 15px;
+    height: 250px;
+    width: 100%;
+    background-color: var(--themColor);
+    align-items: center;
+}
+
+.flr-desc-txt-text {
+    height: 50%;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    font-family: var(--heading-text);
+    font-size: 44px;
+    color: var(--fontColor);
+    padding: 1% 25%;
+}
+
+.flr-des-txt-ch {
+    margin-top: 5px;
+    height: 40%;
+    width: 100%;
+    padding: 0% 30%;
+}
+
+/* --------------- chnl - logo-link --------------*/
+.ch-icon {
+    display: inline-block;
+    height: 110px;
+    width: 140px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.ch-icon img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+/* ---------x-------- Our free learning resources -------x------ */
+
+/* ------------------our class description--------------- */
+
+.clss-dec-txt {
+    margin-top: 15px;
+    width: 100%;
+    height: 900px;
+    padding: 2rem 20%;
+    display: block;
+    overflow: hidden;
+}
+
+.class-desc-txt-1,
+.class-desc-txt-2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 45%;
+    display: inline-flex;
+}
+
+.class-desc-txt-1 img,
+.class-desc-txt-2 img {
+    height: 400px;
+    width: 500px;
+}
+
+.class-desc-txt-1-text,
+.class-desc-txt-2-text {
+    padding-top: 2%;
+}
+
+.class-desc-txt-1-text,
+.class-desc-txt-2-text h5 {
+    color: var(--themColor);
+    font-size: 34px;
+    font-family: var(--heading-text)
+}
+
+.class-desc-txt-1-text p,
+.class-desc-txt-2-text p {
+    color: var(--contentFontColor);
+    font-size: 28px;
+    font-family: var(--body-text);
+}
+
+.cldstxt {
+    height: 2px;
+    background-color: var(--themColor);
+    border: none;
+}
+
+/* ----------x-------our class description-----x--------- */
+
+/*-------------- newsletter -------------------------*/
+
+
+.newsletter-container {
+    margin: 0px 15%;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.newsletter-container-text {
+    padding: 1rem 5rem;
+    text-align: center;
+}
+
+.newsletter-container-text h5 {
+    font-family: var(--heading-text);
+    color: var(--themColor);
+    font-size: 45px;
+}
+
+.newsletter-container-text p {
+    font-family: var(--body-text);
+    color: var(--contentFontColor);
+    font-size: 28px;
+}
+
+.email-text {
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+    font-family: var(--body-text);
+    color: var(--body-text);
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 0rem 1rem;
+
+}
+
+.email-text :focus {
+    border: 1px solid var(--themColor);
+}
+
+.sub-btn {
+    margin-top: 15px;
+    height: 60px;
+    width: 120px;
+    cursor: pointer;
+    background-color: var(--themColor);
+    border: none;
+    border-radius: 30px;
+}
+
+.sub-btn:hover {
+    background-color: var(--bodyBackground);
+    border: 1px solid var(--themColor);
+    color: var(--themColor);
+}
+
+/*--------x----- newsletter ----------------x--------*/
+/* -------------------- Location----------------- */
+
+.location-container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    padding: 2rem 4rem;
+}
+
+.location {
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    margin: 0px 5%;
+    border: 1px solid var(--themColor);
+}
+
+.location h5 {
+    font-family: var(--heading-text);
+    font-size: 30px;
+    background-color: rgba(160, 160, 160, 0.173);
+    color: var(--themColor);
+}
+
+.location iframe {
+    overflow: hidden;
+    width: 100%;
+    height: 90%;
+    border: none;
+}
+
+/* ----------x--------- Location-----x----------- */
+/* ---------------- Our Motio text--------------- */
+.class-sl-ls-txt {
+    width: 100%;
+    height: 250px;
+    background-color: var(--themColor);
+    padding: 2rem 20rem;
+    text-align: center;
+    font-size: 30px;
+    color: var(--fontColor);
+    font-family: var(--heading-text);
+}
+
+.class-sl-ls-txt p {
+    font-family: var(--body-text);
+}
+
+/* -----------x---- Our Motio text------x-------- */
+
+/* ---------------x----  Main ------------x-------  */
+/* --------------Footer -------------------- */
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.859);
+    display: inline-block;
+    color: var(--fontColor);
+    font-family: var(--body-text);
+}
+
+.bottom-navgation {
+    height: 100%;
+    width: 30%;
+    margin: 0% 5%;
+    padding: 2rem 3rem;
+}
+
+.footer-content {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.bottom-navgation ul li a {
+    font-family: var(--heading-text);
+    color: var(--fontColor);
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+}
+
+.dev-info {
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.dev-info a {
+    color: var(--fontColor);
+    text-decoration: none;
+    font-family: var(--heading-text);
+    font-size: 22px;
+}
+
+.bottom-navgation-social {
+    font-size: 30px;
+    color: var(--fontColor);
+
+}
+
+/* -------------x----Footer-----------X */
+
+
+
+/* -------------------- Responsive ------------------- */
+/*              Viewport less then or equal to 1130px            */
+
+@media only screen and (max-width: 1130px) {
+    /* .site-content .post-content > .post-image .post-info{
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+
+    .site-content .sidebar .popular-post .post-info{
+        display: none !important;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+}
+
+/*      x       Viewport less then or equal to 1130px    x     */
+
+
+/*              Viewport less then or equal to 750px            */
+
+@media only screen and (max-width: 750px) {
+    /* .nav .nav-menu, .nav .nav-items{
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse{
+        display: initial;
+    }
+
+    main .site-content{
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container{
+        grid-template-columns: repeat(1, 1fr);
+    } */
+
+}
+
+
+/*        x      Viewport less then or equal to 750px       x     */
+
+
+/*              Viewport less then or equal to 520px            */
+
+@media only screen and (max-width: 520px) {
+    /* main .blog{
+        height: 125vh;
+    }
+
+    .site-content .post-content > .post-image .post-info{
+        display: none;
+    }
+
+    footer.footer .container > div{
+        padding:  1rem .9rem !important;
+    }
+
+    footer .rights{
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+
+    nav .toggle-collapse{
+        width: 80% !important;
+    } */
+
+}
+
+/*        x      Viewport less then or equal to 520px       x     */
+/* ----------x--------- Responsive ---------x--------- */

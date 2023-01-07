@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap');
+
+/* -------------------- Golbal Values ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*      Theme colors        */
+    --themColor: #d33737;
+    --fontColor: #ffff;
+    --contentFontColor: rgb(0, 0, 0);
+    --bodyBackground: cornsilk;
+    --footerColor: rgb(29, 29, 29);
+    --s-body-bg: rgb(239, 239, 239);
+    --navHooverColor: rgb(0, 247, 128);
+    ;
+    --nvaHoverBottom: rgb(0, 47, 255);
+    /*      THeading font       */
+    --heading-text: 'Signika Negative';
+    --body-text: 'Bree Serif', 'sans-serif';
+}
+
+hr {
+    margin: 15px 80px;
+    height: 2px;
+    background-color: var(--themColor);
+    border: none;
+}
+
+/* ----------x--------- Golbal Values -------x----- */
+
+.logo {
+    font-size: 40px;
+}
+
+.navbar {
+    background-color: var(--themColor);
+    color: var(--fontColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    padding: 0rem 2rem;
+    height: 60px;
+}
+
+.navbar h1 {
+    align-items: center;
+    font-family: var(--heading-text);
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: var(--fontColor);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    font-family: var(--heading-text);
+    font-size: 22px;
+}
+
+.navbar ul li :hover {
+    background-color: var(--navHooverColor);
+    color: var(--themColor);
+    border-bottom: 2px solid var(--nvaHoverBottom)
+}
+
+.header-image img {
+    width: 100%;
+    height: 430px;
+    transition: all 1s ease;
+}
+
+/* ----------------About us text--------------- */
+.about-us-txt {
+    height: 200px;
+    width: 100%;
+    background-color: var(--themColor);
+    font-family: var(--heading-text);
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+.about-us-txt h2 {
+    font-size: 64px;
+    color: var(--fontColor);
+}
+
+/* ---------x------About-us text--------x------ */
+/* -------------------- Description-------------- */
+.about-us-desc-txt {
+    width: 100%;
+    height: 700px;
+    padding: 2rem 15%;
+    display: inline-block;
+    background-color: var(--s-body-bg);
+}
+
+.about-us-desc-txt h2 {
+    font-size: 52px;
+    text-align: center;
+    font-family: var(--heading-text);
+    color: var(--themColor);
+}
+
+.about-us-desc-txt p {
+    font-size: 28px;
+    font-family: var(--body-text);
+    color: var(--contentFontColor)
+}
+
+.text-im {
+    color: var(--themColor);
+}
+
+.about-us-desc-txt ul li {
+    margin-left: 50px;
+}
+
+/* ------------x------- Description-----x-------- */
+.our-teams-txt {
+    height: 200px;
+    width: 100%;
+    background-color: var(--themColor);
+    font-family: var(--heading-text);
+    text-align: center;
+    padding: 2rem 5rem;
+}
+
+.our-teams-txt h2 {
+    font-size: 64px;
+    color: var(--fontColor);
+}
+
+/* -----x----- our teams -txt ------x--------- */
+
+/* ---------------- Team member -container -------------- */
+
+.team-members-container {
+    height: 1300px;
+    width: 100%;
+}
+
+.t-space {
+    height: 100%;
+    width: 80%;
+    margin: 0 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.team-members {
+    text-align: center;
+    border: 1px solid var(--themColor);
+    border-radius: 10%;
+    display: inline-flex;
+    height: 400px;
+    width: 400px;
+    padding: 2rem 1rem;
+    margin: 15px 50px;
+}
+
+.md {
+    text-align: center;
+}
+
+.md h3 {
+    color: var(--themColor);
+    font-family: var(--heading-text);
+    font-size: 28px;
+}
+
+.md p {
+    color: var(--contentFontColor);
+    font-family: var(--body-text);
+
+}
+
+.team-members:hover {
+    box-shadow: 4px 5px 3px rgba(0, 21, 255, 0.256);
+    border: 1px solid var(--nvaHoverBottom);
+}
+
+.team-members-img img {
+    height: 150px;
+    width: 180px;
+    border-radius: 100%;
+}
+
+/* .team-members-img img:hover {
+    border: 1px solid var(--nvaHoverBottom);
+} */
+
+/* ---------X------ Team member -container ----X--------- */
+/* --------------Footer -------------------- */
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: var(--footerColor);
+    display: inline-block;
+    color: var(--fontColor);
+    font-family: var(--body-text);
+}
+
+.bottom-navgation {
+    height: 100%;
+    width: 30%;
+    margin: 0% 5%;
+    padding: 2rem 3rem;
+}
+
+.footer-content {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    background-color: var(--footerColor);
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.bottom-navgation ul li a {
+    font-family: var(--heading-text);
+    color: var(--fontColor);
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+}
+
+.dev-info {
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.dev-info a {
+    color: var(--fontColor);
+    text-decoration: none;
+    font-family: var(--heading-text);
+    font-size: 22px;
+}
+
+.bottom-navgation-social {
+    font-size: 30px;
+    color: var(--fontColor);
+
+}
+
+/* -------------x----Footer-----------X */
